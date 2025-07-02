@@ -38,8 +38,11 @@ class TourCard extends StatelessWidget {
             ),
           ],
         ),
+
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+
           children: [
             ClipRRect(
               borderRadius: const BorderRadius.only(
@@ -58,6 +61,8 @@ class TourCard extends StatelessWidget {
                 ),
               ),
             ),
+
+
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(
@@ -72,6 +77,9 @@ class TourCard extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
+
+                  
+
                   const SizedBox(height: 4),
                   Row(
                     children: [
@@ -87,6 +95,11 @@ class TourCard extends StatelessWidget {
                       ),
                     ],
                   ),
+
+
+
+
+
                   const SizedBox(height: 8),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
