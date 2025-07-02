@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sorealtravel_app/screens/favourites_page.dart';
+import 'package:sorealtravel_app/widgets/tour_card.dart';
 
 import '../main.dart';
 
@@ -19,6 +20,18 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             categorySection(),
+            TourCard(
+              title: "Amazing Tour",
+              location: "Paris, France",
+              imageUrl:
+                  "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
+              price: 199.99,
+              rating: 4.5,
+              onTap: () {
+                // Handle tap
+              },
+            ),
+
             const Text(
               "Sign up",
               style: TextStyle(fontStyle: FontStyle.italic),
@@ -63,9 +76,11 @@ Widget categorySection() {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ElevatedButton(onPressed: () {}, child: Text('Category 1')),
-            ElevatedButton(onPressed: () {}, child: Text('Category 2')),
-            ElevatedButton(onPressed: () {}, child: Text('Category 3')),
+            ElevatedButton(onPressed: () {}, child: Text('🌻')),
+            ElevatedButton(onPressed: () {}, child: Text('🫎')),
+            ElevatedButton(onPressed: () {}, child: Text('🌊')),
+            ElevatedButton(onPressed: () {}, child: Text('🏔️')),
+            ElevatedButton(onPressed: () {}, child: Text('🏖️')),
           ],
         ),
       ],
