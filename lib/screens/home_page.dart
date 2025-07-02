@@ -3,36 +3,45 @@ import 'package:sorealtravel_app/screens/favourites_page.dart';
 
 import '../main.dart';
 
-
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});// This is the constructor for the HomePage widget
+  const HomePage({
+    super.key,
+  }); // This is the constructor for the HomePage widget
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Prototype App'),
+        title: Row(children: [Text("Hello Pieter"), Icon(Icons.home)]),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Sign up", style: TextStyle(fontStyle: FontStyle.italic)),
-            ElevatedButton(onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => MyApp()),
-              );
-            }, child: const Text("Go Back to Login Page")),
-
-
-            ElevatedButton(onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) =>  FavouritePage()),
-              );
-            }, child: const Text("Go to Favourites Page")),
             categorySection(),
+            const Text(
+              "Sign up",
+              style: TextStyle(fontStyle: FontStyle.italic),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyApp()),
+                );
+              },
+              child: const Text("Go Back to Login Page"),
+            ),
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FavouritePage()),
+                );
+              },
+              child: const Text("Go to Favourites Page"),
+            ),
           ],
         ),
       ),
