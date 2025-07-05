@@ -90,6 +90,12 @@ class formSection extends StatelessWidget {
           ),
 
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+              textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              foregroundColor: Colors.white,
+              backgroundColor: Colors.blue,
+            ),
             onPressed: () {
               Navigator.push(
                 context,

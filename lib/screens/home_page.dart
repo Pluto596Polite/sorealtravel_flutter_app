@@ -20,23 +20,29 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             categorySection(),
-                  TourCard(
+            TourCard(
               title: "Amazing Tour",
               location: "Paris, France",
-                    imageUrl:
-                        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
+              imageUrl:
+                  "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60",
               price: 199.99,
               rating: 4.5,
-                    onTap: () {
-                      // Handle tap
-                    },
-                  ),
+              onTap: () {
+                // Handle tap
+              },
+            ),
 
             const Text(
               "Sign up",
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue,
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -47,6 +53,12 @@ class HomePage extends StatelessWidget {
             ),
 
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue,
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
