@@ -15,8 +15,8 @@ class FavouritePage extends StatelessWidget {
             height: 130,
             width: double.infinity,
             color: Colors.blue,
-            child: Text("Container for Favourites Page"),
             margin: const EdgeInsets.all(8.0),
+            child: Text("Container for Favourites Page"),
           ),
           const Divider(
             height: 2.5,
@@ -30,8 +30,8 @@ class FavouritePage extends StatelessWidget {
             height: 130,
             width: double.infinity,
             color: Colors.green,
-            child: Text("Container for Favourites Page"),
             margin: const EdgeInsets.all(8.0),
+            child: Text("Container for Favourites Page"),
           ),
 
           const Divider(
@@ -46,8 +46,8 @@ class FavouritePage extends StatelessWidget {
             height: 130,
             width: double.infinity,
             color: Colors.red,
-            child: Text("Container for Favourites Page"),
             margin: const EdgeInsets.all(8.0),
+            child: Text("Container for Favourites Page"),
           ),
           const Divider(
             height: 2.5,
@@ -61,8 +61,8 @@ class FavouritePage extends StatelessWidget {
             height: 130,
             width: double.infinity,
             color: Colors.yellow,
-            child: Text("Container for Favourites Page"),
             margin: const EdgeInsets.all(8.0),
+            child: Text("Container for Favourites Page"),
           ),
 
           const Divider(
@@ -77,8 +77,8 @@ class FavouritePage extends StatelessWidget {
             height: 130,
             width: double.infinity,
             color: Colors.purple,
-            child: Text("Container for Favourites Page"),
             margin: const EdgeInsets.all(8.0),
+            child: Text("Container for Favourites Page"),
           ),
 
           ElevatedButton(
