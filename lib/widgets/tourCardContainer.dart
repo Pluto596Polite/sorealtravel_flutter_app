@@ -7,7 +7,7 @@ class TourCardContainer extends StatelessWidget {
   const TourCardContainer({super.key, required this.item});
   @override
   Widget build(BuildContext context) {
-    return Container (
+    return Container(
       width: 300,
       color: Colors.white, // Or any specific color you want
       decoration: BoxDecoration(
@@ -15,10 +15,10 @@ class TourCardContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(12), // Rounded corners
         boxShadow: [
           BoxShadow(
-        color: Colors.grey.withOpacity(0.3),
-        spreadRadius: 2,
-        blurRadius: 5,
-        offset: const Offset(0, 3),
+            color: Colors.grey.withOpacity(0.3),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -33,7 +33,7 @@ class TourCardContainer extends StatelessWidget {
           rating: item.rating,
           onTap: item.onTap,
         ),
-      )
+      ),
     );
-    }
   }
+}

@@ -1,4 +1,3 @@
-
 //i want to create a tour card widget that will be used to display information about a tour
 import 'package:flutter/material.dart';
 
@@ -39,7 +38,6 @@ class TourCard extends StatelessWidget {
           ],
         ),
 
-
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
 
@@ -62,7 +60,6 @@ class TourCard extends StatelessWidget {
               ),
             ),
 
-
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(
@@ -78,12 +75,14 @@ class TourCard extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
 
-                  
-
                   const SizedBox(height: 4),
                   Row(
                     children: [
-                      const Icon(Icons.location_on, size: 16, color: Colors.grey),
+                      const Icon(
+                        Icons.location_on,
+                        size: 16,
+                        color: Colors.grey,
+                      ),
                       const SizedBox(width: 4),
                       Expanded(
                         child: Text(
@@ -95,10 +94,6 @@ class TourCard extends StatelessWidget {
                       ),
                     ],
                   ),
-
-
-
-
 
                   const SizedBox(height: 8),
                   Row(
