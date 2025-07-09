@@ -11,21 +11,17 @@ class WidgetWheel extends StatelessWidget {
       TourCard(
         title: "Amazing Tour",
         location: "Paris, France",
-        imageUrl:
-            "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+        imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
         price: 99.99,
         rating: 4.0,
-
         onTap: () {},
       ),
       TourCard(
         title: "Beautiful Tour",
         location: "London, UK",
-        imageUrl:
-            "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+        imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
         price: 89.99,
         rating: 4.5,
-
         onTap: () {},
       ),
       // Add more items...

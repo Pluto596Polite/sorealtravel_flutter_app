@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sorealtravel_app/screens/favourites_page.dart';
 import 'package:sorealtravel_app/widgets/widget_wheel.dart';
+import 'package:sorealtravel_app/widgets/tour_card.dart';
+
 
 import '../main.dart';
 
@@ -20,8 +22,36 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             categorySection(),
-            WidgetWheel(), // This is the widget wheel section
-
+            TourCard(
+              title: "Amazing Tour",
+              location: "Paris, France",
+              imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+              price: 199.99,
+              onTap: () {
+                // Handle tap
+              },
+              rating: 4.5,
+            ),
+            TourCard(
+              title: "Grand Canyon Adventure",
+              location: "Grand Canyon, USA",
+              imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+              price: 299.99,
+              onTap: () {
+                // Handle tap
+              },
+              rating: 4.8,
+            ),
+            TourCard(
+              title: "Tokyo City Lights",
+              location: "Tokyo, Japan",
+              imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+              price: 399.99,
+              onTap: () {
+                // Handle tap
+              },
+              rating: 4.9,
+            ),
             // This is the widget wheel section
             const Text(
               "Sign up",
@@ -42,7 +72,6 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("Go Back to Login Page"),
             ),
-
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
